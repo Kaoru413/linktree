@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+body {
+  background: url(../Space.gif) repeat center top/cover;
+  background-color:rgba(0,0,0,0.3);
+  background-blend-mode:darken;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#floppy{
+  font-size:25px;
+  font-weight: bold;
+  border:3px solid #3f806a;
+  border-radius:20px;
+  background-color: #7fffd4;
+  padding:0;
+  margin:20px auto;
+  box-shadow: 0px 3px #3f806a;
+  width:300px;
+  text-align:center;
+  animation-name:fadeDownAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+@keyframes fadeDownAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+p,ul{
+  text-align:center;
+  margin-bottom:20px;
+  color:#ffffff;
+}
+#fadeIn{
+  animation-name:fadeIn;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+#floppy p{
+  font-family: "Slackside One", cursive;
+  border:3px solid #ffffff;
+  border-radius:10px;
+  margin:20px 20px 0px;
+  padding:20px 0 40px;
+  background-color:#ffffff;
+  color:#000000;
+  font-size: 80px;
+  }
+#floppy_up{
+  border:3px solid #ffffff;
+  background-color:#ffffff;
+  border-radius:0px 0px 10px 10px;
+  margin:0px 30px 0px 40px;
+  padding:0px 30px 10px 10px;
+}
+img{
+  width:40%;
+  margin:20px 20px 10px 0px;
+  text-align:center;
+  transform: rotate(-2deg);
+}
+#floppy_up a{
+  float:right;
+  color:#7fffd4;
+  border: 3px solid#7fffd4;
+  background-color: #7fffd4;
+  border-radius:5px;
+  margin: 10px 0px 0px 0px;
+  padding:30px 10px;
+}
+ul a{
+  border:3px solid #a4a4a4;
+  background-color: #ffffff;
+  display:block;
+  padding:20px 0;
+  border-radius:60px;
+  box-shadow: 0px 5px #a4a4a4;
+  color:#000000;
+  font-weight:bold;
+}
+ul a:active {
+  box-shadow: none;
+  position: relative;
+  top: 5px;
+}
+ul{
+  width:300px;
+  margin:0 auto;
+  animation-name:fadeUpAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+li{
+  margin-bottom:20px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer{
+  margin-top: auto;
+  color:rgba(255, 255, 255, 0.3);
+  text-align: center
+}
+@media screen and (min-height:1000px){
+  body {
+    background: url(../Space.gif) repeat center top/300%;
+    background-color:rgba(0,0,0,0.3);
+  }
+}
