@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body {
-  background: url(../Space.gif) repeat center top/cover;
-  background-color:rgba(0,0,0,0.3);
-  background-blend-mode:darken;
+  background: black url(../Space.gif) repeat center top/cover;
+  /*background-color:rgba(0,0,0,0.3);
+  background-blend-mode:darken;*/
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -131,6 +131,7 @@ li{
 }
 footer{
   margin-top: auto;
+  margin-bottom: 5px;
   color:rgba(255, 255, 255, 0.3);
   text-align: center
 }
